@@ -1,0 +1,22 @@
+{
+  "name": "GroceryListExercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect-brk index.js",
+    "dev": "nodemon index.js",
+    "reset-db": "dropdb grocery-list-db; createdb grocery-list-db; psql -f schema.sql grocery-list-db; psql -f seed.sql grocery-list-db",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "pg-promise": "^8.5.1"
+  }
+}
